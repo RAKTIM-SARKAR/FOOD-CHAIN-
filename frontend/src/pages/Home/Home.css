@@ -1,0 +1,131 @@
+/* Home.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:aquamarine ;
+    color: white; /* Set global font color to white */
+    min-height: 100vh;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    width: 100%;
+    padding-bottom:20px;
+    text-align: center;
+    background-color:turquoise; /* Darker shade of purple for the header */
+    color: white; /* Ensure header text is white */
+  }
+  
+  .explore-menu.h1{
+    width: 100%;
+    padding: 1rem 0;
+    background-color:turquoise; /* Medium shade of purple for the menu */
+    text-align: center;
+     /* Ensure explore menu text is white */
+  }
+  
+  .food-display {
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0); /* Ensure food display text is white */
+  }
+  
+  .app-download {
+    width: 100%;
+    padding: 2rem 0;
+   /* Medium shade of purple for the app download section */
+    text-align: center;
+    color: white; /* Ensure app download text is white */
+  }
+  
+  button {
+    background-color: #000000; /* Darker purple for buttons */
+    color: rgb(0, 0, 0); /* Ensure button text is white */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: turquoise ; /* Change button color on hover */
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Extra Large Devices (Desktops, 1200px and up) */
+  @media (max-width: 1200px) {
+    .food-display {
+      width: 85%;
+    }
+  }
+  
+  /* Large Devices (Desktops, 992px and up) */
+  @media (max-width: 992px) {
+    .food-display {
+      width: 90%;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+  }
+  
+  /* Medium Devices (Tablets, 768px and up) */
+  @media (max-width: 768px) {
+    .food-display {
+      width: 95%;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+  
+    button {
+      padding: 8px 16px;
+      margin: 8px;
+    }
+  }
+  
+  /* Small Devices (Large Phones, 576px and up) */
+  @media (max-width: 576px) {
+    header, .explore-menu, .app-download {
+      padding: 0.5rem 0;
+    }
+  
+    .food-display {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+    }
+  
+    button {
+      padding: 6px 12px;
+      margin: 6px;
+    }
+  }
+  
+  /* Extra Small Devices (Phones, less than 576px) */
+  @media (max-width: 480px) {
+    header, .explore-menu, .app-download {
+      padding: 0.25rem 0;
+    }
+  
+    .food-display {
+      width: 100%;
+      padding: 0.25rem;
+      margin: 0.25rem 0;
+    }
+  
+    button {
+      padding: 4px 8px;
+      margin: 4px;
+    }
+  }

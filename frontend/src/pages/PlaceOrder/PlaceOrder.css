@@ -1,0 +1,320 @@
+/* General container styling */
+.place-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 160px;
+  padding: 0 20px;
+}
+
+/* Left column styling */
+.place-order-left {
+  width: 100%;
+  max-width: 500px;
+  margin-top: -100px;
+}
+
+.place-order-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: center;
+  color: black; /* Making title text black */
+}
+
+.place-order-left input,
+.place-order-left textarea {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  outline-color: rgb(0, 0, 0);
+}
+
+.place-order-left .multi-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 600px) {
+  .place-order-left .multi-fields {
+    flex-direction: row;
+  }
+}
+
+.payment-method {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: black; /* Making payment method text black */
+}
+
+.payment-method label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.payment-method input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 360px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.payment-method input[type="checkbox"]:checked {
+  background-color: #000;
+}
+
+.payment-method input[type="checkbox"]:checked::before {
+  content: '✔';
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Delivery info text box */
+.delivery-info-textbox {
+  width: 100%;
+  height: 250px; /* Base height */
+  padding: 15px;
+  font-size: 16px;
+   border: 1px solid #ccc; 
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1050px) {
+  .delivery-info-textbox {
+    height: 220px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .delivery-info-textbox {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 750px) {
+  .delivery-info-textbox {
+    height: 180px; /* Adjust height for smaller screens */
+  }
+}
+
+/* Right column styling */
+.place-order-right {
+  width: 100%;
+  max-width: 500px;
+}
+
+.cart-total {
+  width: 100%;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-total button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* General container styling */
+.place-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 160px;
+  padding: 0 20px;
+}
+
+/* Left column styling */
+.place-order-left {
+  width: 100%;
+  max-width: 500px;
+}
+
+.place-order-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: center;
+  color: black; /* Making title text black */
+}
+
+.place-order-left input,
+.place-order-left textarea {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  outline-color: rgb(0, 0, 0);
+}
+
+.place-order-left .multi-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 600px) {
+  .place-order-left .multi-fields {
+    flex-direction: row;
+  }
+}
+
+.payment-method {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: black; /* Making payment method text black */
+}
+
+.payment-method label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.payment-method input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 360px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.payment-method input[type="checkbox"]:checked {
+  background-color: #000;
+}
+
+.payment-method input[type="checkbox"]:checked::before {
+  content: '✔';
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Delivery info text box */
+.delivery-info-textbox {
+  width: 100%;
+  height: 250px; /* Base height */
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1050px) {
+  .delivery-info-textbox {
+    height: 220px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .delivery-info-textbox {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 750px) {
+  .delivery-info-textbox {
+    height: 180px; /* Adjust height for smaller screens */
+  }
+}
+
+/* Right column styling */
+.place-order-right {
+  width: 100%;
+  max-width: 500px;
+}
+
+.cart-total {
+  width: 100%;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: none; /* Ensure there's no line under the subtotal */
+}
+
+.cart-total button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cart-total button:hover {
+  background-color: rgb(156, 142, 142);
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .place-order {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .place-order-left,
+  .place-order-right {
+    max-width: none;
+  }
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .place-order {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .place-order-left,
+  .place-order-right {
+    max-width: none;
+  }
+}
